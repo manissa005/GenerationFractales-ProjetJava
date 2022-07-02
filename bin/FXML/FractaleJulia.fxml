@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="PaneJulia" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="682.0" stylesheets="@../CSS/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControleurFractale">
+   <children>
+      <Label layoutX="38.0" layoutY="181.0" prefHeight="27.0" prefWidth="297.0" text="Veuillez saisir tous les paramétres : " textFill="LIGHTSEAGREEN">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="321.0" layoutY="208.0" text="Constante" />
+      <Label layoutX="318.0" layoutY="269.0" text="Taille image" />
+      <Label layoutX="304.0" layoutY="332.0" text="Taille Rectangle" />
+      <Label layoutX="393.0" layoutY="400.0" text="Nombre Max d'itération" />
+      <Label layoutX="199.0" layoutY="400.0" text="Nombre Limite" />
+      <TextField fx:id="reel" alignment="TOP_CENTER" layoutX="156.0" layoutY="232.0" text="Partie réelle " />
+      <TextField fx:id="imaginaire" alignment="TOP_CENTER" layoutX="384.0" layoutY="232.0" text="Partie imaginaire" />
+      <TextField fx:id="iter_max" alignment="TOP_CENTER" layoutX="384.0" layoutY="417.0" />
+      <TextField fx:id="radius" alignment="TOP_CENTER" layoutX="158.0" layoutY="417.0" />
+      <TextField fx:id="imageH" alignment="TOP_CENTER" layoutX="157.0" layoutY="291.0" text="Hauteur" />
+      <TextField fx:id="imageW" alignment="TOP_CENTER" layoutX="384.0" layoutY="291.0" text="Largeur" />
+      <TextField fx:id="recH" alignment="TOP_CENTER" layoutX="158.0" layoutY="357.0" text="Hauteur" />
+      <TextField fx:id="recW" alignment="TOP_CENTER" layoutX="384.0" layoutY="357.0" text="Largeur" />
+      <TextField fx:id="nomimage" alignment="TOP_CENTER" layoutX="386.0" layoutY="471.0" />
+      <Label layoutX="422.0" layoutY="455.0" text="Nom Image" />
+      <Button fx:id="GenereJ" layoutX="307.0" layoutY="506.0" mnemonicParsing="false" onAction="#HandleGenereJ" prefHeight="47.0" prefWidth="80.0" text="Générer" />
+      <AnchorPane layoutX="-6.0" layoutY="-1.0" prefHeight="71.0" prefWidth="726.0" style="-fx-background-color: #20b2aa;">
+         <children>
+            <Label graphicTextGap="10.0" layoutX="200.0" layoutY="12.0" prefHeight="47.0" prefWidth="270.0" style="-fx-font-size: 30;" text="FRACTALE DE JULIA" textAlignment="CENTER" textFill="LIGHTSEAGREEN">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fill="LIGHTSEAGREEN" layoutX="11.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #000000;" text="Les ensembles de Julia sont des ensembles fractales populaires, d’une part par leur côté esthétique et d’autre part par la simplicité de la formule permettant de les calculer. Les fractales de Julia différent selon la valeur de la constante complexe choisit, voici quelques valeurs intéréssantes pour des fractales : c=0.285+0.01i,c=0.4+0.2i, c=0.3+0.5i, c=-0.4+0.6i,  c=-0.72+0.11i" wrappingWidth="660.0000002086163">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nomimage1" alignment="TOP_CENTER" layoutX="161.0" layoutY="472.0" />
+      <Label layoutX="201.0" layoutY="455.0" text="Pas discretisation" />
+   </children>
+</AnchorPane>

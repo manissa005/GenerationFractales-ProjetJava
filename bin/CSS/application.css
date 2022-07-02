@@ -1,0 +1,19 @@
+
+.button {
+    -fx-border-color:  #20b2aa;
+    -fx-border-width: 2;
+    -fx-background-color:  #DCDCDC;
+    -fx-text-fill:  #000000;
+}
+.text-field {
+    -fx-text-fill: #000000;
+    -fx-border-color:  #20b2aa;
+    -fx-border-width: 2;
+}
+
+.label {
+    -fx-text-fill: #000000;
+}
+.Text{
+	-fx-text-fill: #000000;
+}
